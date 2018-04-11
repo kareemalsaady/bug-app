@@ -1,8 +1,22 @@
   import { Component } from '@angular/core';
 
+
   @Component({
     selector: 'my-app',
-    template: '<h1>Angular Skeleton</h1>'
+    template: `
+              <navbar></navbar>
+              <div class="container">
+                <router-outlet></router-outlet>
+              </div>
+              `,
+              styles: [`
+                  .container{
+                    margin-top: 4rem;
+                  }
+                `]
   })
 
-  export class AppComponent { }
+  export class AppComponent {
+
+
+  }
